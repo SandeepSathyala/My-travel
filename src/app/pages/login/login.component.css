@@ -1,0 +1,22 @@
+.card {
+    margin-top: 15px;
+    border: 1px solid blue;
+    width: 550px;
+    padding: 45px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size:20px;
+    box-shadow: 6px 10px lightcoral;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(224,167,44,1) 100%);
+}
+.card .btn{
+    size: 5cm;
+
+}
+.mb-3 input{
+ height: 45px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,40 @@
+
+
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="assets/images/contact-img.svg" alt="">
+        </div>
+
+        <form action="" [formGroup]="Contact">
+            <div class="inputBox">
+                
+                <input type="text" placeholder="name" formControlName="name">
+                <input type="email" placeholder="email" formControlName="email">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="number" formControlName="number">
+                <input type="text" placeholder="subject" formControlName="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10" formControlName="message"></textarea>
+            <input type="submit" class="btn" value="send message" (click)="Display()" >
+        </form>
+
+    </div>
+    
+</section>
+<app-footer></app-footer>
+

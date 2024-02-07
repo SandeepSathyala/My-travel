@@ -1,0 +1,171 @@
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>World OF </span>Travel</a>
+    <div class="icons">
+        <a routerLink="/login"><i class="fas fa-user" id="login-btn">Logout</i></a>
+    </div>
+
+</header>
+
+
+<div class="container">
+    <div class="tables">
+
+
+        <div class="title" style=" margin-top: 20rem; text-align: center; color: blue;">
+            <h1>Check All Flight Details Here......</h1>
+        </div>
+
+        <div class="data">
+            <table *ngFor="let flight of Flight" class="table table-dark table-striped"
+                style="width: 1000px; height: 80px; font-size: 18px; margin-top: 5rem; margin-left: 6rem;">
+                <thead>
+                    <tr style="color:yellow;">
+                        <th scope="col">Flight Name</th>
+                        <th scope="col">Source</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Return-Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Booking</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Air Asia</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1300</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>06:50</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Air India</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1100</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>07:10</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Emirates Airlines</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1500</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>07:45</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>SpiceJet</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1300</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>09:20</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>IndiGo</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1210</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>10:20</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Vistara</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1200</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>11:25</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>International Airlines</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1050</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>12:30</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Malaysia Airlines</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1100</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>13:45</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>British Airways</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1200</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>14:10</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Qatar Airways</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1000</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>16:50</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Air Arabia</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1100</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>18:05</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>Go First</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1500</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>21:35</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                    <tr>
+                        <th>TruJet</th>
+                        <td>{{flight.from}}</td>
+                        <td>{{flight.to}}</td>
+                        <td>$1300</td>
+                        <td>{{flight.date}}</td>
+                        <td>{{flight.twowaydate}}</td>
+                        <td>23:50</td>
+                        <th><a routerLink="/booking">Book Now</a></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
