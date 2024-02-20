@@ -11,6 +11,7 @@ import { SearchComponent } from './pages/search/search.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { SignupComponent } from './pages/signup/signup.component';
 
+
 const routes: Routes = [
 
   { path : '', redirectTo: 'home', pathMatch:'full'},
